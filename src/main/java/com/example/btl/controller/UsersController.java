@@ -19,6 +19,7 @@ import java.util.concurrent.RejectedExecutionException;
 
 @RestController
 @RequestMapping(value = "/users")
+@CrossOrigin(allowedHeaders = "*")
 public class UsersController extends BaseController<Users,UsersRepository>{
     @Autowired
     public UsersRepository repository;

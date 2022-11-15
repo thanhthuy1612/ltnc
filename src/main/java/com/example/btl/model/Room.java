@@ -5,8 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "room")
@@ -14,5 +14,10 @@ import javax.persistence.Table;
 @Getter
 @Setter
 public class Room extends BaseModel {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
     private String name;
+    @OneToMany(mappedBy = "room", cascade = CascadeType.ALL)
+    private Collection<Schedule> scheduleRoom;
 }

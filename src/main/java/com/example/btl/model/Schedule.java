@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.ZonedDateTime;
+import java.util.Collection;
 
 @Entity
 @Table(name = "schedule")
@@ -14,9 +15,18 @@ import java.time.ZonedDateTime;
 @Getter
 @Setter
 public class Schedule extends BaseModel{
-    private Integer roomId;
-    private Integer filmId;
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
+    //private Integer roomId;
+    //private Integer filmId;
     private ZonedDateTime date;
-    private String nameFilm;
-    private String nameRoom;
+    @ManyToOne
+    @JoinColumn(name = "roomId")
+    private Room room;
+    @ManyToOne
+    @JoinColumn(name = "filmId")
+    private Film film;
+    @OneToMany(mappedBy = "schedule", cascade = CascadeType.ALL)
+    private Collection<Ticket> ticketSchedule;
 }

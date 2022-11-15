@@ -5,8 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "film")
@@ -14,6 +14,11 @@ import javax.persistence.Table;
 @Getter
 @Setter
 public class Film extends BaseModel {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
     private String name;
     private Integer time;
+    @OneToMany(mappedBy = "film", cascade = CascadeType.ALL)
+    private Collection<Schedule> scheduleFilm;
 }
