@@ -1,22 +1,22 @@
-package com.example.btl.controller;
+package com.example.btl.Controller;
 
 import com.example.btl.Base.BaseController;
-import com.example.btl.model.Film;
-import com.example.btl.repository.FilmRepository;
+import com.example.btl.Model.Room;
+import com.example.btl.Repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/film")
+@RequestMapping(value = "/room")
 @CrossOrigin(allowedHeaders = "*")
-public class FilmController extends BaseController<Film, FilmRepository> {
+public class RoomController extends BaseController<Room, RoomRepository> {
     @Autowired
-    public FilmRepository repository;
+    public RoomRepository repository;
 
     @Override
-    public FilmRepository get() {
+    public RoomRepository get() {
         return repository;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.btl.model;
+package com.example.btl.Model;
 
 import com.example.btl.Base.BaseModel;
 import com.example.btl.Utils.AES;
@@ -9,7 +9,6 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.ZonedDateTime;
 import java.util.Collection;
-import java.util.Set;
 
 @Entity
 @Table(name = "users")

@@ -1,20 +1,16 @@
-package com.example.btl.controller;
+package com.example.btl.Controller;
 
 import com.example.btl.Base.BaseController;
 import com.example.btl.Utils.AES;
-import com.example.btl.Utils.ResourceNotFoundException;
-import com.example.btl.model.Users;
+import com.example.btl.Model.Users;
 
-import com.example.btl.repository.UsersRepository;
+import com.example.btl.Repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.RejectedExecutionException;
 
 
 @RestController

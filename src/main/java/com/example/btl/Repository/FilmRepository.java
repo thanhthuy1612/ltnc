@@ -1,7 +1,7 @@
-package com.example.btl.repository;
+package com.example.btl.Repository;
 
 import com.example.btl.Base.BaseRepository;
-import com.example.btl.model.Film;
+import com.example.btl.Model.Film;
 import org.springframework.stereotype.Repository;
 
 @Repository

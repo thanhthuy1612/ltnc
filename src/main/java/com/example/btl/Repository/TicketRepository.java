@@ -1,7 +1,7 @@
-package com.example.btl.repository;
+package com.example.btl.Repository;
 
 import com.example.btl.Base.BaseRepository;
-import com.example.btl.model.Ticket;
+import com.example.btl.Model.Ticket;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 

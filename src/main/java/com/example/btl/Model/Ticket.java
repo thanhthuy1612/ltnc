@@ -1,4 +1,4 @@
-package com.example.btl.model;
+package com.example.btl.Model;
 
 import com.example.btl.Base.BaseModel;
 import lombok.Getter;
@@ -8,8 +8,6 @@ import javax.persistence.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "ticket")

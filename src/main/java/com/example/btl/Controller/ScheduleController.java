@@ -1,8 +1,8 @@
-package com.example.btl.controller;
+package com.example.btl.Controller;
 
 import com.example.btl.Base.BaseController;
-import com.example.btl.model.Schedule;
-import com.example.btl.repository.ScheduleRepository;
+import com.example.btl.Model.Schedule;
+import com.example.btl.Repository.ScheduleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;

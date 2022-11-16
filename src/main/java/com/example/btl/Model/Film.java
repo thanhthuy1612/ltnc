@@ -1,4 +1,4 @@
-package com.example.btl.model;
+package com.example.btl.Model;
 
 import com.example.btl.Base.BaseModel;
 import lombok.Getter;

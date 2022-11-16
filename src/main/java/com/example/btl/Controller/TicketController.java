@@ -1,8 +1,8 @@
-package com.example.btl.controller;
+package com.example.btl.Controller;
 
 import com.example.btl.Base.BaseController;
-import com.example.btl.model.Ticket;
-import com.example.btl.repository.TicketRepository;
+import com.example.btl.Model.Ticket;
+import com.example.btl.Repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
